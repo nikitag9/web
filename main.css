@@ -540,12 +540,12 @@ footer{
     z-index: 111;
     border: 1px solid #2E5090;
     transition: all 0.2s ease-out;
-    animation: moveCursor1 .5s infinite alternate;
+    animation: moveCursor1 .2s infinite alternate;
 }
 
 .expand {
     background: transparent;
-    animation: moveCursor2 .5s forwards;
+    animation: moveCursor2 .2s forwards;
     border: 1px solid #000;
 }
 
@@ -598,7 +598,7 @@ footer{
     /* margin-top: 50px; */
     overflow:auto;
     -webkit-animation: type 24s steps(28);
-    animation: type 24s steps(28);
+    animation: type 8s steps(28);
   }
   .typer-container .typer {
     font-size: 36px !important;
@@ -606,24 +606,24 @@ footer{
   }
   /* Sets delay for each animated word*/
   .typer:nth-child(2) { 
-    -webkit-animation-delay: 7s; 
-    animation-delay: 7s;
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
   }
   .typer:nth-child(3) { 
-    -webkit-animation-delay: 15s; 
-    animation-delay: 15s;
+    -webkit-animation-delay: 6s; 
+    animation-delay: 6s;
   }
   .typer:nth-child(4) { 
-    -webkit-animation-delay: 23s;
-      animation-delay: 23s; 
+    -webkit-animation-delay: 9s;
+      animation-delay: 9s; 
   }
   .typer:nth-child(5) { 
-    -webkit-animation-delay: 31s; 
-      animation-delay: 31s; 
+    -webkit-animation-delay: 12s; 
+      animation-delay: 12s; 
   }
   .typer:nth-child(6) { 
-    -webkit-animation-delay: 39s;
-      animation-delay: 39s; 
+    -webkit-animation-delay: 15s;
+      animation-delay: 15s; 
   }
   /* Keyframes for animation */ 
   @keyframes type {

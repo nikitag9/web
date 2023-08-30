@@ -188,25 +188,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   //   startTyping(0);
   // });
+
 var func = $("#restart").queue(function types() {  
     var original = $(this);
     var newClass = original.clone(true);
     setInterval(function() {
         original.before(newClass);
         $("." + original.attr("class") + ":last").remove();
-    },3000);
+    },100);
 });
+function restartPage() {
+            location.reload();
+        }
+
+        // Set a timeout to restart the page after a certain duration (e.g., 10 seconds)
+        setTimeout(restartPage, 19000);
 </script>
-<script>
-var func = $("#restart").queue(function types() {  
-    var original2 = $(this);
-    var newClass = original2.clone(true);
-    setInterval(function() {
-        original2.before(newClass);
-        $("." + original2.attr("class") + ":last").remove();
-    },3000);
-});
-</script>
+
 
 
 
