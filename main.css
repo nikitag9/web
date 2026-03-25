@@ -241,7 +241,9 @@ a.underline{
   grid-gap: 5rem;
   padding-bottom: 90px;
   padding-top: 100px;
-  margin-left: 400px;
+  margin-left: 420px;
+  font-size: 34px;
+  line-height: 46px;
 }
 .intropic {
     height: 300px;
@@ -249,6 +251,13 @@ a.underline{
     position: absolute;
     top: 13%; /* Change this value to adjust the vertical position */
     left: 15%;
+}
+.intropic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 .about{
   margin-left: 0rem;
@@ -419,8 +428,9 @@ footer{
   }
   h1.homeheader{
     margin-bottom: 0.5rem;
-    font-size: 29px;
-    line-height: 37px;
+    margin-left: 10px;
+    font-size: 26px;
+    line-height: 33px;
     padding-top: 0rem;
 }
 
