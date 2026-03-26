@@ -251,12 +251,15 @@ a.underline{
     position: absolute;
     top: 13%; /* Change this value to adjust the vertical position */
     left: 15%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .intropic img {
     height: 100%;
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 .about{
