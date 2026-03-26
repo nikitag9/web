@@ -686,12 +686,4 @@ footer{
     margin-left: -50px;
   }
   
-  .image-container img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease; /* Add transition effect for smooth animation */
-  }
-  
-  .image-container:hover img {
-    transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
-  }
+  .i
