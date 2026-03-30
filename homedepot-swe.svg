@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="The Home Depot software engineering">
+  <rect width="800" height="600" fill="#f3f2ed"/>
+  <ellipse cx="400" cy="320" rx="280" ry="200" fill="#fff3e6" stroke="#F96302" stroke-width="3"/>
+  <!-- house + carpet metaphor -->
+  <path d="M280 360 L400 260 L520 360 V420 H280 Z" fill="#fff" stroke="#2E5090" stroke-width="3"/>
+  <rect x="360" y="380" width="80" height="40" rx="4" fill="#2E5090" opacity="0.2" stroke="#2E5090" stroke-width="2"/>
+  <!-- carpet roll -->
+  <ellipse cx="520" cy="340" rx="70" ry="90" fill="#F96302" opacity="0.25" stroke="#F96302" stroke-width="3"/>
+  <path d="M450 340 Q520 280 590 340 Q520 400 450 340" fill="none" stroke="#2E5090" stroke-width="4"/>
+  <!-- ruler / seam marks -->
+  <rect x="240" y="440" width="320" height="24" rx="4" fill="#fff" stroke="#2E5090" stroke-width="2"/>
+  <line x1="260" y1="440" x2="260" y2="464" stroke="#2E5090" stroke-width="2"/>
+  <line x1="300" y1="440" x2="300" y2="464" stroke="#2E5090" stroke-width="2"/>
+  <line x1="340" y1="440" x2="340" y2="464" stroke="#2E5090" stroke-width="2"/>
+  <line x1="380" y1="440" x2="380" y2="464" stroke="#2E5090" stroke-width="2"/>
+  <line x1="420" y1="440" x2="420" y2="464" stroke="#2E5090" stroke-width="2"/>
+  <!-- algo / optimization hint -->
+  <polyline points="360,190 400,150 440,190 400,230 360,190" fill="none" stroke="#2E5090" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="400" cy="190" r="8" fill="#F96302"/>
+</svg>
