@@ -9,7 +9,7 @@
     width: 0%;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 200;
 }
 main{
   max-width: 80em;
@@ -22,12 +22,17 @@ main{
 body{
   margin:0;
   background-color: #f3f2ed;
+  /* Prevent fixed nav/progress bar from covering content */
+  padding-top: 60px;
 }
 
 nav{
   height: 60px;
   position: fixed;
+  top: 0;
   width: 100%;
+  z-index: 100;
+  background-color: #f3f2ed;
 }
 
 nav img{
@@ -360,8 +365,12 @@ p.short-about{
 }
 
 iframe{
-  width:1080px;
-  height:600px;
+  width: 100%;
+  max-width: 1080px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
 }
 
 hr {
@@ -395,8 +404,8 @@ footer{
   }
 
   iframe{
-    width:800px;
-    height:500px;
+    width: 100%;
+    max-width: 800px;
   }
 
 }
@@ -413,8 +422,8 @@ footer{
   }
 
   iframe{
-    width:1000px;
-    height:550px;
+    width: 100%;
+    max-width: 1000px;
   }
 }
 
@@ -591,17 +600,22 @@ footer{
   }
 
   iframe{
-    width:300px;
-    height:200px;
+    width: 100%;
+    max-width: 100%;
   }
 
 }
 img.fit {
-    max-width: 640px;
-    max-height: 230px;
-    display: block;
-    margin: 0 auto;
-    margin-right: 500px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Keep hero/banner images from being excessively tall */
+img.fit.hidden-mobile{
+  max-height: 360px;
+  object-fit: cover;
 }
 
 .cursor {
@@ -619,6 +633,12 @@ img.fit {
     border: 1px solid #2E5090;
     transition: all 0.2s ease-out;
     animation: moveCursor1 .5s infinite alternate;
+}
+
+@media (hover: none), (pointer: coarse){
+  .cursor{
+    display: none;
+  }
 }
 
 .expand {
